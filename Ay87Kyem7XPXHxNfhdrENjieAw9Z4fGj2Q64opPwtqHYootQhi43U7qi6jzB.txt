@@ -100,3 +100,21 @@
 131.150.0.0/16
 # US Navy (143.105.85.149 - military)
 143.105.0.0/16
+# Final Log Additions (Nov 2025)
+# Level 3 / CenturyLink Additional (107.122.50.50 - TX transit)
+107.122.0.0/15
+# Cogent Extensions (38.104.37.186, 38.133.212.186, 38.178.190.148 - TX consumer)
+38.104.0.0/13
+38.128.0.0/13
+38.176.0.0/13
+# Level 3 Legacy (204.107.19.5 - TX business)
+204.107.0.0/18
+# Google Cloud Additional (35.135.190.32, 35.146.76.17 - employee VPN)
+35.135.0.0/16
+35.146.0.0/16
+# Spectrum Additional (68.185.217.73 - TX residential)
+68.185.0.0/16
+# Cogent Private (172.4.7.123 - TX mobile)
+172.4.0.0/15
+# Comcast Additional (47.4.84.64 - TX home)
+47.4.0.0/15
