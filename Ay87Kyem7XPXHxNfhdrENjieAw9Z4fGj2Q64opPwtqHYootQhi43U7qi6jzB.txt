@@ -118,3 +118,10 @@
 172.4.0.0/15
 # Comcast Additional (47.4.84.64 - TX home)
 47.4.0.0/15
+# Ultimate Batch Additions (Nov 2025)
+# Level 3 / CenturyLink Business Extension (107.115.120.58 & 107.115.120.48 - TX transit)
+107.115.120.0/24
+# Comcast Residential Extension (47.37.89.158 - TX home)
+47.37.0.0/16
+# Level 3 / CenturyLink Business Cluster (107.121.104.51, 107.121.100.55, 107.121.100.30 - TX transit)
+107.121.0.0/16
