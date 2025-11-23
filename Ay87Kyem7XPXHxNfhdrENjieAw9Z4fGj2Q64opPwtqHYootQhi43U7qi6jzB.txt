@@ -76,3 +76,10 @@
 68.179.224.0/20
 # Level 3 / CenturyLink Business (107.120.36.49 - TX transit/VPN)
 107.120.32.0/20
+# More Recent Log Additions (Nov 2025)
+# CenturyLink / Lumen Residential (97.247.202.166 - TX DSL/fiber)
+97.247.0.0/16
+# AWS EC2 Additional (99.71.212.207 - employee VPN)
+99.71.0.0/16
+# Comcast Residential (174.82.53.231 - TX home)
+174.82.0.0/16
