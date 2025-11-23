@@ -43,3 +43,19 @@
 97.154.0.0/16          # Lumen / CenturyLink Mobile
 108.144.0.0/12         # AT&T
 129.222.0.0/16         # Apple iCloud Private Relay (common with mobile)
+
+# Central Texas Additions (Austin/San Antonio/Killeen/Waco - Nov 2025)
+# Google Fiber (GFiber) - Austin/Houston/San Antonio mobile/fixed
+66.249.64.0/19     # Primary GFiber mobile
+66.249.80.0/20
+72.14.192.0/18
+173.194.0.0/16     # Google Cloud/TX endpoints (if employees use GFiber home)
+
+# GVEC (Guadalupe Valley Electric Co-op) - South Central TX (New Braunfels/Seguin/Kerrville)
+204.111.0.0/20     # GVEC primary
+204.111.16.0/20
+204.111.32.0/19    # Covers their DSL/fiber mobile gateways
+
+# Astound Broadband (TX cable/mobile) - San Antonio/Austin/Waco
+76.85.0.0/17       # Astound TX consumer
+76.86.0.0/15
