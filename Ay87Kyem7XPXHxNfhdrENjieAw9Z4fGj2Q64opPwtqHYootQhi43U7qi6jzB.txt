@@ -1,127 +1,103 @@
-# T-Mobile USA (the vast majority of your 166.205.x.x hits)
-66.94.0.0/15
-66.96.0.0/12
-172.58.0.0/16 # some T-Mobile LTE
-208.54.0.0/16
-# Verizon Wireless (your 98.97.x.x and some 107.x hits)
-72.64.0.0/13
-73.0.0.0/8
-98.96.0.0/11
-100.32.0.0/12
-107.0.0.0/12
-108.64.0.0/11
-108.192.0.0/10
-172.32.0.0/11
-174.192.0.0/10
-# AT&T Mobility (your 12.x and 107.x hits)
-12.0.0.0/8 # Yes, still huge — but AT&T Mobility really owns the whole thing
+# Allow-List – Central & DFW Texas – FINAL Nov 2025
+# Mobile Carriers
+66.94.0.0/15               # T-Mobile USA
+66.96.0.0/12               # T-Mobile USA
+172.58.0.0/16              # T-Mobile LTE
+208.54.0.0/16              # T-Mobile legacy
+72.64.0.0/13               # Verizon Wireless
+73.0.0.0/8                 # Verizon Wireless
+98.96.0.0/11               # Verizon Wireless
+100.32.0.0/12              # Verizon Wireless
+107.0.0.0/12               # Verizon Wireless
+108.64.0.0/11              # Verizon Wireless
+108.192.0.0/10             # Verizon Wireless
+172.32.0.0/11              # Verizon Wireless
+174.192.0.0/10             # Verizon Wireless
+66.52.0.0/15               # Verizon Business / FiOS (66.52.188.179 etc. - full TX block)
+
+# AT&T Mobility
+12.0.0.0/8
 104.0.0.0/8
 107.128.0.0/9
-# Comcast Xfinity Mobile (166.x and 50.x hits)
+108.144.0.0/12
+
+# Comcast / Xfinity Mobile + Residential
+47.4.0.0/15                # Comcast TX residential
+47.37.0.0/16               # Comcast TX residential
 50.128.0.0/9
 73.192.0.0/10
 166.0.0.0/10
+166.141.0.0/16
 166.192.0.0/11
+174.82.0.0/16
 174.128.0.0/9
-# Spectrum Mobile (68.x and 75.x hits)
+
+# Spectrum / Charter
 68.64.0.0/11
+68.179.224.0/20
+68.185.0.0/16
 75.128.0.0/9
-# Cox Mobile (24.x hits)
-24.0.0.0/8 # Cox owns this entire /8 — unavoidable
-# US Cellular (some 166.137.x.x hits)
-166.137.0.0/16
-# Rural TX Wireless/Satellite Additions (Rise, Nextlink, Starlink - Nov 2025)
-# Rise Broadband (AS18452) - Fixed wireless in West/North TX (e.g., Abilene, Wichita Falls)
-199.36.240.0/20 # Primary Rise consumer
-199.36.248.0/22
-67.216.224.0/20 # Rise TX mobile gateways
-67.216.240.0/21
-# Nextlink Internet (AS18989) - Wireless in DFW/Fort Worth suburbs (e.g., Mansfield, Keller)
-69.8.128.0/17 # Nextlink TX primary
-69.9.0.0/16
-72.36.224.0/19 # Nextlink mobile/fixed
-# Starlink (AS14593) - Satellite broadband (rural DFW/Central TX coverage)
-100.119.0.0/16 # Starlink US consumer primary
-100.127.0.0/16
-104.199.0.0/16 # Starlink satellite endpoints
-135.48.0.0/13 # Additional Starlink TX allocations
-# Smaller carriers that showed up in your logs
-45.23.181.0/24 # Consumer Cellular / T-Mobile MVNO
-69.59.122.0/24 # Consumer Cellular
-97.154.0.0/16 # Lumen / CenturyLink Mobile
-108.144.0.0/12 # AT&T
-129.222.0.0/16 # Apple iCloud Private Relay (common with mobile)
-# Central Texas Additions (Austin/San Antonio/Killeen/Waco - Nov 2025)
-# Google Fiber (GFiber) - Austin/Houston/San Antonio mobile/fixed
-66.249.64.0/19 # Primary GFiber mobile
+
+# Cox
+24.0.0.0/8
+
+# CenturyLink / Lumen / Level 3 (all TX consumer & business blocks)
+97.154.0.0/16
+97.176.0.0/13
+97.247.0.0/16
+107.115.120.0/24
+107.120.32.0/20
+107.121.0.0/16
+107.122.0.0/15
+107.127.0.0/17
+204.107.0.0/18
+
+# Google Fiber & Google Cloud (employee home / VPN)
+66.249.64.0/19
 66.249.80.0/20
 72.14.192.0/18
-173.194.0.0/16 # Google Cloud/TX endpoints (if employees use GFiber home)
-# GVEC (Guadalupe Valley Electric Co-op) - South Central TX (New Braunfels/Seguin/Kerrville)
-204.111.0.0/20 # GVEC primary
-204.111.16.0/20
-204.111.32.0/19 # Covers their DSL/fiber mobile gateways
-# Astound Broadband (TX cable/mobile) - San Antonio/Austin/Waco
-76.85.0.0/17 # Astound TX consumer
-76.86.0.0/15
-# Recent Log Additions (Blocked IPs from GlobalProtect - Nov 2025)
-# AWS EC2 (99.104.24.7 - employee VPN/home router?)
-99.104.0.0/17
-# Cogent Communications (74.244.47.61 & 38.147.143.213 - business DSL/transit)
-74.244.0.0/18
-38.144.0.0/13
-# Verizon Business (66.52.188.179 - FiOS/enterprise)
-66.52.0.0/18
-# Spectrum Residential (68.179.226.63 - TX home)
-68.179.224.0/20
-# Level 3 / CenturyLink Business (107.120.36.49 - TX transit/VPN)
-107.120.32.0/20
-# More Recent Log Additions (Nov 2025)
-# CenturyLink / Lumen Residential (97.247.202.166 - TX DSL/fiber)
-97.247.0.0/16
-# AWS EC2 Additional (99.71.212.207 - employee VPN)
-99.71.0.0/16
-# Comcast Residential (174.82.53.231 - TX home)
-174.82.0.0/16
-# Latest Log Additions (Nov 2025)
-# DoD Network (132.147.157.121 - military/contractor)
-132.147.0.0/16
-# Microsoft Azure (52.144.111.74 - TX region VPN)
-52.144.0.0/13
-# Cogent Additional (38.86.209.34 - TX transit)
-38.86.0.0/15
-# Google Cloud (35.134.78.45 - employee VPN)
+173.194.0.0/16
 35.134.0.0/16
-# Comcast Additional (166.141.206.210 - TX residential)
-166.141.0.0/16
-# CenturyLink / Lumen Additional (97.176.85.42 - TX DSL)
-97.176.0.0/13
-# US Department of Education (131.150.77.42 - university/contractor)
-131.150.0.0/16
-# US Navy (143.105.85.149 - military)
-143.105.0.0/16
-# Final Log Additions (Nov 2025)
-# Level 3 / CenturyLink Additional (107.122.50.50 - TX transit)
-107.122.0.0/15
-# Cogent Extensions (38.104.37.186, 38.133.212.186, 38.178.190.148 - TX consumer)
-38.104.0.0/13
-38.128.0.0/13
-38.176.0.0/13
-# Level 3 Legacy (204.107.19.5 - TX business)
-204.107.0.0/18
-# Google Cloud Additional (35.135.190.32, 35.146.76.17 - employee VPN)
 35.135.0.0/16
 35.146.0.0/16
-# Spectrum Additional (68.185.217.73 - TX residential)
-68.185.0.0/16
-# Cogent Private (172.4.7.123 - TX mobile)
+
+# Cogent (TX transit / small ISPs)
+38.86.0.0/15
+38.104.0.0/13
+38.128.0.0/13
+38.144.0.0/13
+38.176.0.0/13
+74.244.0.0/18
 172.4.0.0/15
-# Comcast Additional (47.4.84.64 - TX home)
-47.4.0.0/15
-# Ultimate Batch Additions (Nov 2025)
-# Level 3 / CenturyLink Business Extension (107.115.120.58 & 107.115.120.48 - TX transit)
-107.115.120.0/24
-# Comcast Residential Extension (47.37.89.158 - TX home)
-47.37.0.0/16
-# Level 3 / CenturyLink Business Cluster (107.121.104.51, 107.121.100.55, 107.121.100.30 - TX transit)
-107.121.0.0/16
+
+# Rural / Regional Texas
+45.23.181.0/24             # Consumer Cellular (T-Mobile MVNO)
+69.59.122.0/24             # Consumer Cellular
+130.250.240.0/21           # Texas.Net (Austin/DFW ISP)
+199.36.240.0/20            # Rise Broadband
+199.36.248.0/22            # Rise Broadband
+67.216.224.0/20            # Rise Broadband
+67.216.240.0/21            # Rise Broadband
+69.8.128.0/17              # Nextlink
+69.9.0.0/16                # Nextlink
+72.36.224.0/19             # Nextlink
+
+# Starlink (rural TX employees)
+100.119.0.0/16
+100.127.0.0/16
+104.199.0.0/16
+135.48.0.0/13
+
+# Misc / Apple iCloud Private Relay (common on mobile)
+129.222.0.0/16
+
+# Government / Education (military contractors, universities, etc.)
+131.150.0.0/16             # US Dept of Education
+132.147.0.0/16             # DoD
+143.105.0.0/16             # US Navy
+166.137.0.0/16             # US Cellular (some 166.137.x.x hits)
+
+# AWS & Microsoft Azure (employee home VPNs / cloud endpoints)
+52.144.0.0/13              # Microsoft Azure TX
+99.71.0.0/16               # AWS EC2
+99.104.0.0/17              # AWS EC2
