@@ -83,3 +83,20 @@
 99.71.0.0/16
 # Comcast Residential (174.82.53.231 - TX home)
 174.82.0.0/16
+# Latest Log Additions (Nov 2025)
+# DoD Network (132.147.157.121 - military/contractor)
+132.147.0.0/16
+# Microsoft Azure (52.144.111.74 - TX region VPN)
+52.144.0.0/13
+# Cogent Additional (38.86.209.34 - TX transit)
+38.86.0.0/15
+# Google Cloud (35.134.78.45 - employee VPN)
+35.134.0.0/16
+# Comcast Additional (166.141.206.210 - TX residential)
+166.141.0.0/16
+# CenturyLink / Lumen Additional (97.176.85.42 - TX DSL)
+97.176.0.0/13
+# US Department of Education (131.150.77.42 - university/contractor)
+131.150.0.0/16
+# US Navy (143.105.85.149 - military)
+143.105.0.0/16
