@@ -1,9 +1,8 @@
 # T-Mobile USA (the vast majority of your 166.205.x.x hits)
 66.94.0.0/15
 66.96.0.0/12
-172.58.0.0/16          # some T-Mobile LTE
+172.58.0.0/16 # some T-Mobile LTE
 208.54.0.0/16
-
 # Verizon Wireless (your 98.97.x.x and some 107.x hits)
 72.64.0.0/13
 73.0.0.0/8
@@ -14,66 +13,66 @@
 108.192.0.0/10
 172.32.0.0/11
 174.192.0.0/10
-
 # AT&T Mobility (your 12.x and 107.x hits)
-12.0.0.0/8             # Yes, still huge — but AT&T Mobility really owns the whole thing
+12.0.0.0/8 # Yes, still huge — but AT&T Mobility really owns the whole thing
 104.0.0.0/8
 107.128.0.0/9
-
 # Comcast Xfinity Mobile (166.x and 50.x hits)
 50.128.0.0/9
 73.192.0.0/10
 166.0.0.0/10
 166.192.0.0/11
 174.128.0.0/9
-
 # Spectrum Mobile (68.x and 75.x hits)
 68.64.0.0/11
 75.128.0.0/9
-
 # Cox Mobile (24.x hits)
-24.0.0.0/8             # Cox owns this entire /8 — unavoidable
-
+24.0.0.0/8 # Cox owns this entire /8 — unavoidable
 # US Cellular (some 166.137.x.x hits)
 166.137.0.0/16
-
 # Rural TX Wireless/Satellite Additions (Rise, Nextlink, Starlink - Nov 2025)
 # Rise Broadband (AS18452) - Fixed wireless in West/North TX (e.g., Abilene, Wichita Falls)
-199.36.240.0/20    # Primary Rise consumer
+199.36.240.0/20 # Primary Rise consumer
 199.36.248.0/22
-67.216.224.0/20    # Rise TX mobile gateways
+67.216.224.0/20 # Rise TX mobile gateways
 67.216.240.0/21
-
 # Nextlink Internet (AS18989) - Wireless in DFW/Fort Worth suburbs (e.g., Mansfield, Keller)
-69.8.128.0/17      # Nextlink TX primary
+69.8.128.0/17 # Nextlink TX primary
 69.9.0.0/16
-72.36.224.0/19     # Nextlink mobile/fixed
-
+72.36.224.0/19 # Nextlink mobile/fixed
 # Starlink (AS14593) - Satellite broadband (rural DFW/Central TX coverage)
-100.119.0.0/16     # Starlink US consumer primary
+100.119.0.0/16 # Starlink US consumer primary
 100.127.0.0/16
-104.199.0.0/16     # Starlink satellite endpoints
-135.48.0.0/13      # Additional Starlink TX allocations
-
+104.199.0.0/16 # Starlink satellite endpoints
+135.48.0.0/13 # Additional Starlink TX allocations
 # Smaller carriers that showed up in your logs
-45.23.181.0/24         # Consumer Cellular / T-Mobile MVNO
-69.59.122.0/24         # Consumer Cellular
-97.154.0.0/16          # Lumen / CenturyLink Mobile
-108.144.0.0/12         # AT&T
-129.222.0.0/16         # Apple iCloud Private Relay (common with mobile)
-
+45.23.181.0/24 # Consumer Cellular / T-Mobile MVNO
+69.59.122.0/24 # Consumer Cellular
+97.154.0.0/16 # Lumen / CenturyLink Mobile
+108.144.0.0/12 # AT&T
+129.222.0.0/16 # Apple iCloud Private Relay (common with mobile)
 # Central Texas Additions (Austin/San Antonio/Killeen/Waco - Nov 2025)
 # Google Fiber (GFiber) - Austin/Houston/San Antonio mobile/fixed
-66.249.64.0/19     # Primary GFiber mobile
+66.249.64.0/19 # Primary GFiber mobile
 66.249.80.0/20
 72.14.192.0/18
-173.194.0.0/16     # Google Cloud/TX endpoints (if employees use GFiber home)
-
+173.194.0.0/16 # Google Cloud/TX endpoints (if employees use GFiber home)
 # GVEC (Guadalupe Valley Electric Co-op) - South Central TX (New Braunfels/Seguin/Kerrville)
-204.111.0.0/20     # GVEC primary
+204.111.0.0/20 # GVEC primary
 204.111.16.0/20
-204.111.32.0/19    # Covers their DSL/fiber mobile gateways
-
+204.111.32.0/19 # Covers their DSL/fiber mobile gateways
 # Astound Broadband (TX cable/mobile) - San Antonio/Austin/Waco
-76.85.0.0/17       # Astound TX consumer
+76.85.0.0/17 # Astound TX consumer
 76.86.0.0/15
+# Recent Log Additions (Blocked IPs from GlobalProtect - Nov 2025)
+# AWS EC2 (99.104.24.7 - employee VPN/home router?)
+99.104.0.0/17
+# Cogent Communications (74.244.47.61 & 38.147.143.213 - business DSL/transit)
+74.244.0.0/18
+38.144.0.0/13
+# Verizon Business (66.52.188.179 - FiOS/enterprise)
+66.52.0.0/18
+# Spectrum Residential (68.179.226.63 - TX home)
+68.179.224.0/20
+# Level 3 / CenturyLink Business (107.120.36.49 - TX transit/VPN)
+107.120.32.0/20
