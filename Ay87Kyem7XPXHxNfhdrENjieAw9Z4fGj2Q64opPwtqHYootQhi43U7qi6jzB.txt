@@ -37,6 +37,24 @@
 # US Cellular (some 166.137.x.x hits)
 166.137.0.0/16
 
+# Rural TX Wireless/Satellite Additions (Rise, Nextlink, Starlink - Nov 2025)
+# Rise Broadband (AS18452) - Fixed wireless in West/North TX (e.g., Abilene, Wichita Falls)
+199.36.240.0/20    # Primary Rise consumer
+199.36.248.0/22
+67.216.224.0/20    # Rise TX mobile gateways
+67.216.240.0/21
+
+# Nextlink Internet (AS18989) - Wireless in DFW/Fort Worth suburbs (e.g., Mansfield, Keller)
+69.8.128.0/17      # Nextlink TX primary
+69.9.0.0/16
+72.36.224.0/19     # Nextlink mobile/fixed
+
+# Starlink (AS14593) - Satellite broadband (rural DFW/Central TX coverage)
+100.119.0.0/16     # Starlink US consumer primary
+100.127.0.0/16
+104.199.0.0/16     # Starlink satellite endpoints
+135.48.0.0/13      # Additional Starlink TX allocations
+
 # Smaller carriers that showed up in your logs
 45.23.181.0/24         # Consumer Cellular / T-Mobile MVNO
 69.59.122.0/24         # Consumer Cellular
